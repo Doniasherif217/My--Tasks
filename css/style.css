@@ -1,0 +1,70 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    --mainfont: arial,sans-serif;
+    --maincolor: rgb(3, 151, 3);
+}
+h1{
+    text-align: center;
+    font-family: sans-serif;
+}
+section{
+    margin: auto;
+    width: fit-content;
+    height: 40vh;
+}
+section form{
+    position: relative;  
+    margin-top: 10vh;
+}
+section form input{
+    display: block;
+    margin-top: 17px;
+border-radius: 15px;
+width: 20vw;
+height: 35px;
+background-color: rgb(212, 205, 205);
+padding-left: 30px;
+}
+section form i{
+    position: absolute;
+    color: rgb(102, 100, 100);
+ }
+ .i1{
+    margin-top:1vh;
+    margin-left: 1vw;
+ }
+.i2{
+    margin-top:4vh;
+    margin-left: 1vw;
+}
+.input1::placeholder{
+   font-size: 15px;
+}
+.input2::placeholder{
+    font-size: 20px;
+ }
+ button{
+    display: block;
+    background-color: var(--maincolor);
+    color: white;
+    border: 0;
+    border-radius: 15px;
+    margin-top: 20px;
+    width: 20vw;
+    height: 35px;
+ }
+ .forgot-link, .create-link{
+    display: block;
+    margin-top: 12px;
+text-decoration: none;
+color: var(--maincolor);
+text-align: center;
+font: var(--mainfont);
+ }
+ .forgot-link span {
+    color: black;
+ }
