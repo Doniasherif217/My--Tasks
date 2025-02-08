@@ -1,71 +1,212 @@
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-html{
-    --mainfont: arial,sans-serif;
-}
 body{
-    height: 100vh;
-    width: 100vw;
-    font-family: var(--mainfont);
+font-family: arial,sans-serif;
+color: white;
+background-image:url(../imges/img1.jpeg) ;
+background-size: cover;
+background-repeat: no-repeat;
+height: 100vh;
+position: relative;
 }
-header{
-justify-content: center;
-align-items: center;
-display: flex;
+header  ul{
+  list-style: none;
+  display: inline-block;
 }
- header .logo{
-    width:80px;
-    height: 20px;
-       border: 2px solid black ;
-     display: flex;
-     justify-content: center;
-    align-items: center;
-     margin-right:100px ;
-    }
- header  ul{
-    list-style: none;
+ul li{
+  display: inline-block;
+  margin-left: 20px;
 }
- ul li{
-    display: inline;
-    margin-left: 20px;
+.li1{
+  font-size: 25px;
+  margin-left: 100px;
+  margin-right: 40vh;
 }
- header  ul li a{
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
+header div{
+display: inline-block;
+margin-left: 20vw;
 }
-main{
-    height: 100vh;
-   width: 100vw;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+.p1{
+  color: rgb(109, 105, 105);
 }
-.divh1{
-width:200px ;
-height: 200px;
-margin:auto ;
-margin-top: 20vh;
+ul li:hover{
+  text-decoration: underline;
+  color: blueviolet;
 }
-main h1{
-    font-size: 50px;
+.overlay{
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  top: 0px;
 }
-main h1 p{
-    font-size: 25px;
-    font-weight: normal;
+.main-item1{
+  margin: auto;
+  height: 50vh;
+  width: 50vw;
+  margin-top: 30vh;
 }
-.divp1{
-width: 600px;
-height: 60px;
-margin: auto;
+.main-item1 h1{
+  text-align: center;
+  font-size: 55px;
+  color:rgb(27, 25, 25) ;
 }
-button{
-    padding: 7px 15px;
+.main-item2{
+  width: 50px;
+  height: 50px;
+ position: relative;
+ overflow: hidden;
+ transition: border 0.3s;
+ margin-top: -45vh;
+ margin-left: 20vw;
+}
+.main-item2::before,.main-item2::after{
+  content: "";
+  position: absolute;
+  transition: all 0.3s;
+  border: 1px solid black;
+}
+.main-item2::before{
+  bottom: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-top: 1px solid  transparent;
+  border-right:1px solid  transparent ;
+  transition: all 0.3s;
+}
+.main-item2::after{
+ top: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  border-bottom:1px solid transparent ;
+  border-left:1px solid transparent ;
+  transition: all 0.3s;
+}
+.main-item2:hover{
+  border: 1px solid black;
+}
+.main-item2 p{
+text-align: center;
+font-size: 27px;
+padding: 7px;
+}
+.main-item3{
+  width: 50px;
+  height: 50px;
+ position: relative;
+ overflow: hidden;
+ transition: border 0.3s;
+ margin-top: -7vh;
+ margin-left: 80vw;
+}
+.main-item3::before,.main-item3::after{
+  content: "";
+  position: absolute;
+  transition: all 0.3s;
+  border: 1px solid black;
+}
+.main-item3::before{
+  bottom: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-top: 1px solid  transparent;
+  border-right:1px solid  transparent ;
+  transition: all 0.3s;
+}
+.main-item3::after{
+ top: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  border-bottom:1px solid transparent ;
+  border-left:1px solid transparent ;
+  transition: all 0.3s;
+}
+.main-item3:hover{
+  border: 1px solid black;
+}
+.main-item3 p{
+text-align: center;
+font-size: 27px;
+padding: 7px;
+}
+.main-item4{
+  width: 100px;
+  height: 30px;
+ position: relative;
+ transition: border 0.3s;
+ margin: auto;
+ margin-top: 50px;
+}
+.main-item4::before,.main-item4::after{
+  content: "";
+  position: absolute;
+  transition: all 0.3s;
+  border: 1px solid black;
+}
+.main-item4::before{
+  bottom: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-top: 1px solid  transparent;
+  border-right:1px solid  transparent ;
+  transition: all 0.3s;
+}
+.main-item4::after{
+ top: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  border-bottom:1px solid transparent ;
+  border-left:1px solid transparent ;
+  transition: all 0.3s;
+}
+.main-item4:hover{
+  border: 1px solid black;
+}
+.main-item4 p{
+  text-align: center;
+  font-size: 15px;
+  padding: 7px;
+  }
+  
+  .section-item1{
+    font-size: 12px;
+    
+  }
+  .section-item2{
     background-color: white;
-    color: black;
-    border: 1px solid black ;
-    font-weight: bold;
-}
+    height: 3px;
+    width: 70px;
+    display: inline-block;
+    margin-top: 35vh;
+  }
+  .section-item3 {
+    margin: auto;
+    width: 200px;
+    height: 50px;
+  }
+  .section-item3 p{
+text-align: center;
+color: rgb(109, 105, 105);
+  }
+  .section-item4{
+    width: 200px;
+    height: 20px;
+    margin-left: auto;
+    margin-top: -10vh;
+  }
+  .i1{
+    margin-left: 20px;
+    margin-right: auto;
+    color:white;
+   font-size: 20px;
+  
+  }
